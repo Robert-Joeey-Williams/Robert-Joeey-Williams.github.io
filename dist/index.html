@@ -6,36 +6,38 @@
     <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="flex flex-col lg:flex-row min-h-screen">
-        <!-- <header class="header">
-            <a href="#home" class="logo">Joey <span>Williams</span></a>
-            
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#education">Education</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header> -->
-        <button id="sidebarToggle" class="fixed top-4 left-4 z-50 text-white text-3xl bg-black bg-opacity-50 px-3 py-1 rounded-md transition-transform duration-300">
-            ☰
-        </button>
-        <header class="fixed top-0 left-0 h-full w-64 bg-black bg-opacity-30 backdrop-blur z-40 flex flex-col justify-start items-start px-6 py-8 transform -translate-x-full transition-transform duration-300 ease-in-out" id="sidebar">    
-    
-            <a href="#home" class="logo mb-10 text-3xl font-bold text-white">
-                Joey <span>Williams</span>
-            </a>
+    <!-- <header class="header">
+        <a href="#home" class="logo">Joey <span>Williams</span></a>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header> -->
+    <button id="sidebarToggle" class="fixed top-4 left-4 z-50 text-white text-3xl bg-black bg-opacity-50 px-3 py-1 rounded-md transition-transform duration-300">
+        ☰
+    </button>
+    <header class="fixed top-0 left-0 h-full w-64 bg-black bg-opacity-30 backdrop-blur z-40 flex flex-col justify-start items-start px-6 py-8 transform -translate-x-full transition-transform duration-300 ease-in-out" id="sidebar">    
 
-            
-            <nav class="navbar flex flex-col gap-6">
-                <a href="#home" class="active">Home</a>
-                <a href="#education">Education</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+        <a href="#home" class="logo mb-10 text-3xl font-bold text-white">
+            Joey <span>Williams</span>
+        </a>
 
-        <section class="fade-section home ml-0 lg:pt-0 flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-[10rem]" id="home">
+        
+        <nav class="navbar flex flex-col gap-6">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="page-content" class="transition-all">
+
+        <section class="fade-section home ml-0 pt-8 lg:pt-0 flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-[10rem]" id="home">
             <div class="home-img">
                 <img class="sm:w-[32vw] md:w-[60vw] lg:w-[90vw] rounded-full shadow-[0_0_25px_var(--main-color)] hover:shadow-[0_0_25px_var(--main-color),_0_0_50px_var(--main-color)] transition duration-300" src="../images/headshot.jpeg" alt="Headshot">
 
@@ -52,15 +54,14 @@
                     If you're looking for someone who can deliver polished solutions and communicate clearly throughout the process, I’d love to connect.
                 </p>
 
-                <div class="social-icons">
+                <!-- <div class="social-icons">
                     <a href="#"></a>
                     <a href="#"></a>
                     <a href="#"></a>
                     <a href="#"></a>
-                </div>
-
+                </div> -->
+                <br>
                 <div class="btn-group">
-                    <a href="#" class="btn">Hire</a>
                     <a href="#contact" class="btn">Contact</a>
                 </div>
             </div>
@@ -69,53 +70,126 @@
 
         </section>
 
+        <section id="about" class="fade-section flex flex-col items-center justify-center px-[12%] py-12">
+            <div class="home-content max-w-4xl">
+                <h1 class="w-full text-4xl lg:text-5xl font-bold mb-6 text-center"><span>About Me</span></h1>
+                <p class="text-lg lg:text-xl font-medium leading-relaxed text-center">
+                I started programming at just <span>10 years old</span> in an elementary school computer class, and I've been hooked ever since. 
+                The idea that I could create entire experiences with just a keyboard sparked a lifelong love for <span>software development</span>. 
+                Growing up in a rural town in <span>south Georgia</span>, I used <span>YouTube tutorials</span> and a shaky internet connection 
+                to teach myself how to build <span>websites</span>, <span>games</span>, and basic <span>apps</span>.
+
+                <br><br>
+                In 8th grade, I moved to <span>Coffee County</span>, where I finally had access to formal <span>computer science education</span>. 
+                I took CS classes in <span>8th</span> and <span>9th grade</span> that taught me proper web development with <span>HTML</span>, 
+                <span>CSS</span>, and <span>JavaScript</span>. Throughout the rest of high school, I shifted focus to <span>engineering classes</span>, 
+                drawn to the hands-on nature of building and experimenting. My incredible <span>engineering teacher</span> encouraged me to 
+                incorporate <span>computer science</span> into my projects using <span>microcontrollers</span> and <span>online portfolios</span>. 
+                It was in these classes that I developed what I consider my most valuable skill: <span>problem solving</span>.
+
+                <br><br>
+                I also joined both the <span>TSA</span> and <span>VEX Robotics</span> teams, competing in <span>video game design</span> 
+                contests and building robots to face off in national competitions. I reached the <span>state finals</span> three years in a row, 
+                and in my senior year, our team advanced to the <span>World Championship</span>, where I served as the lead programmer. I also served as a <span>Robotics Captain</span>, reporter, vice president, and <span>TSA President</span> during my time in the organization.
+                </p>
+
+            </div>
+        </section>
+
+
+        <section id="education" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-12">
+            <div class="home-content max-w-4xl">
+                <h1 class="w-full text-center text-4xl lg:text-5xl font-bold mb-6"><span>Education</span></h1>
+                <p class="text-lg lg:text-xl font-medium leading-relaxed text-center">
+                I am currently a <span>Senior</span> pursuing my Bachelor's in <span>Computer Science</span> at the <span>Georgia Institute of Technology</span>, where I specialize in full-stack development and user-centered design.
+                <br><br>
+                My coursework includes:
+                <div class="space-y-6 text-lg lg:text-xl font-medium leading-relaxed text-center">
+                    <p><span>Objects and Design</span> – Learned industry-standard UI/UX practices and developed team-based mobile applications such as a class calendar and personalized Spotify Wrapped app using APIs and <span>Agile methodologies</span>.</p>
+                    <p><span>Systems and Architecture</span> – Gained insight into how computers operate at a physical level, working with low-level programming languages and understanding how high-level code compiles into machine instructions.</p>
+                    <p><span>Data Structures & Algorithms</span> – Explored efficient methods of storing, organizing, and retrieving data, with emphasis on complexity analysis and problem-solving strategies.</p>
+                </div>
+
+                <br>
+                <div class="space-y-6 text-lg lg:text-xl font-medium leading-relaxed text-center">
+                    <p>I also completed a two-semester <span>Junior Design Capstone Project</span> in collaboration with an <span>M.D. at Emory University Hospital</span>, where our team planned, prototyped, and developed a medication information and dosage conversion website. The project aimed to integrate fragmented tools into a single, intuitive platform to help healthcare professionals make faster and safer clinical decisions.
+
+                <br><br>
+                These experiences have strengthened not only my technical skills, but also my ability to work across disciplines, communicate with clients, and iterate quickly on feedback.</p>
+                </div>
+                </p>
+            </div>
+        </section>
+
+
+        <section id="services" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-6">
+        <div class="home-content max-w-4xl">
+            <h1 class="w-full text-center text-4xl lg:text-5xl font-bold mb-6"><span>Services</span></h1>
+            <p class="text-lg lg:text-xl font-medium leading-relaxed mb-8 text-center">
+            I offer a range of development and design services to help individuals and businesses build a strong digital presence.
+            Whether you're starting from scratch or improving an existing product, I provide scalable and creative solutions tailored to your needs.
+            </p>
+
+            <ul class="text-left list-disc list-inside text-lg lg:text-xl font-medium leading-relaxed space-y-4">
+            <li>
+                <span class="font-bold">Web Development:</span> Custom websites and applications built using <span>HTML</span>, <span>Tailwind CSS</span>, <span>JavaScript</span>, <span>React</span>, and <span>Node.js</span>. I create responsive, fast, and accessible web solutions tailored to your goals.
+            </li>
+            <li>
+                <span class="font-bold text-yellow-400">UI/UX Design:</span> Wireframes, interactive prototypes, and polished interfaces. I apply industry-standard principles to ensure a seamless and visually engaging experience for your users.
+            </li>
+            <li>
+                <span class="font-bold text-yellow-400">Standalone Applications:</span> Full-featured desktop or internal-use applications that include their own <span>database architecture</span> for managing inventory, records, or business workflows. Ideal for companies needing lightweight custom tools without relying on third-party platforms.
+            </li>
+            <li>
+                <span class="font-bold text-yellow-400">Technical Consultation:</span> Need help planning a tech project? I assist with scope definition, feature prioritization, system design, and tool selection to ensure long-term success.
+            </li>
+            <li>
+                <span class="font-bold text-yellow-400">API Integration:</span> I connect your product to external services (e.g., Spotify, Firebase, OpenAI) to add functionality like authentication, data processing, or media retrieval.
+            </li>
+            </ul>
+        </div>
+        </section>
+
+
+        <section id="experience" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-6">
+            <div class="home-content max-w-4xl">
+                <h1 class="w-full text-center text-4xl lg:text-5xl font-bold mb-6"><span>Experience</span></h1>
+                <p class="text-lg lg:text-xl font-medium leading-relaxed text-center">
+                During the summers following high school, I interned with the IT department of an <span>airfoils manufacturing plant</span>. 
+                There, I developed <span>custom user interfaces</span> and <span>server-side applications</span> to track daily production data and improve workflow efficiency. 
+                I returned the following year to refine internal tools, resolve longstanding <span>UI/UX issues</span>, and collaborate with engineers to deliver solutions used on the production floor.
+                </p>
+
+                <br>
+
+                <p class="text-lg lg:text-xl font-medium leading-relaxed text-center">
+                I also <span>designed and developed</span> this personal website from scratch to showcase my skills and experience. It was built using <span>HTML</span>, <span>Tailwind CSS</span>, and <span>JavaScript</span>, and demonstrates my attention to responsive design, interactive UI, and clean code structure. This site serves as both a portfolio and a live example of my frontend development abilities.
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-12">
+            <div class="home-content max-w-4xl">
+                <h1 class="w-full text-center text-4xl lg:text-5xl font-bold mb-6"><span>Contact</span></h1>
+                <p class="text-lg lg:text-xl font-medium leading-relaxed mb-8 text-center">
+                Whether you're looking for a <span>freelance developer</span>, want to collaborate on a project, 
+                or just want to connect, I’d love to hear from you. Use the form below to get in touch or reach out 
+                directly via <span>LinkedIn</span> or <span>email</span>.
+                </p>
+                <form class="w-full max-w-2xl mx-auto flex flex-col gap-6" action="https://formsubmit.co/robert.joeseph.williams@gmail.com" method="POST">
+                <input type="email" name="email" placeholder="Your Email" class="contact__input px-4 py-3 rounded-md bg-transparent border border-gray-600 text-white" />
+                <textarea name="text" rows="6" placeholder="Your Message" class="contact__input px-4 py-3 rounded-md bg-transparent border border-gray-600 text-white"></textarea>
+                <button type="submit" class="btn self-center">Send Message</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                </form>
+            </div>
+        </section>
+
+
     </div>
-
-    <section id="education" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-24">
-        <div class="home-content max-w-4xl">
-            <h1 class="text-4xl lg:text-5xl font-bold mb-6"><span>Education</span></h1>
-            <p class="text-lg lg:text-xl font-medium leading-relaxed">
-            I’m currently a senior pursuing a Bachelor’s degree in <span>Computer Science</span> at the <span>Georgia Institute of Technology</span>, 
-            where I specialize in full-stack web development and user interface design. My coursework includes data 
-            structures, algorithms, operating systems, and human-computer interaction. I’ve also worked on several 
-            hands-on projects involving mobile app development, REST APIs, and cloud integration. Outside of class, 
-            I participate in student-led organizations and contribute to open-source software.
-            </p>
-        </div>
-    </section>
-
-
-    <section id="services" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-24">
-        <div class="home-content max-w-4xl">
-            <h1 class="text-4xl lg:text-5xl font-bold mb-6"><span>Services</span></h1>
-            <p class="text-lg lg:text-xl font-medium leading-relaxed">
-            I offer a range of <span>web development</span> and <span>UI/UX design</span> services tailored to meet client needs. 
-            Whether you need a responsive portfolio, a dynamic web app, or custom-built components, I can bring your vision to life. 
-            My specialties include <span>React</span>, <span>Tailwind CSS</span>, and <span>Node.js</span>. I also provide consultation 
-            on design decisions, site performance optimization, and deployment strategies using platforms like <span>Vercel</span> and <span>Firebase</span>.
-            </p>
-        </div>
-    </section>
-
-
-    <section id="contact" class="fade-section flex flex-col items-center justify-center text-center px-[12%] py-24">
-        <div class="home-content max-w-4xl">
-            <h1 class="text-4xl lg:text-5xl font-bold mb-6"><span>Contact</span></h1>
-            <p class="text-lg lg:text-xl font-medium leading-relaxed mb-8">
-            Whether you're looking for a <span>freelance developer</span>, want to collaborate on a project, 
-            or just want to connect, I’d love to hear from you. Use the form below to get in touch or reach out 
-            directly via <span>LinkedIn</span> or <span>email</span>.
-            </p>
-            <form class="w-full max-w-2xl mx-auto flex flex-col gap-6">
-            <input type="text" placeholder="Your Name" class="contact__input px-4 py-3 rounded-md bg-transparent border border-gray-600 text-white" />
-            <input type="email" placeholder="Your Email" class="contact__input px-4 py-3 rounded-md bg-transparent border border-gray-600 text-white" />
-            <textarea rows="6" placeholder="Your Message" class="contact__input px-4 py-3 rounded-md bg-transparent border border-gray-600 text-white"></textarea>
-            <button type="submit" class="btn self-center">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-
     <script src="./script.js"></script>
 </body>
 </html>
